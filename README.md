@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/newsletter-signup-with-success-message-using-html-css-flexbox-and-js-10w5q4JwGi)
+- [Live Site URL](https://marilisa-saldanha.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
