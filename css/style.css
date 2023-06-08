@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --tomato: hsl(4, 100%, 67%);
+  /* Neutral */
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --light-red: hsl(3, 100%, 93%);
+  /* Gradient */
+  --gradient1: hsl(14, 100%, 62%);
+  --gradient2: hsl(350, 100%, 66%);
+  --gradient3: hsl(357, 100%, 68%);
+  --gradient4: hsl(14, 100%, 62%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainScreen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.content h1 {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+  font-size: 2.53rem;
+}
+
+.content h2 {
+  color: var(--dark-slate-grey);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content .benefits {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 0;
+}
+
+.content .benefits .list {
+  display: flex;
+  gap: 1rem;
+}
+
+.content .benefits .list img {
+  align-self: flex-start;
+}
+
+.content .benefits .list p {
+  color: var(--dark-slate-grey);
+}
+
+.content form .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .4rem;
+}
+
+.content form .info label {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+  font-size: .78rem;
+}
+
+.content form .info span {
+  color: var(--tomato);
+  font-weight: 700;
+  font-size: .78rem;
+  display: block;
+}
+
+.content form input {
+ width: 100%;
+ padding: 1rem;
+ border-radius: .3rem;
+ border: .063rem solid var(--grey);
+ outline: none;
+}
+
+.content form input::placeholder {
+  color: var(--grey);
+  opacity: .8;
+}
+
+.content form button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: .3rem;
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.content form button:hover {
+  background: linear-gradient(to right, var(--gradient2), var(--tomato), var(--gradient3), var(--gradient4), var(--gradient1));
+}
+
+.hideScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.hideScreen .screenMessage {
+  color: var(--dark-slate-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hideScreen .screenMessage img {
+  width: 4rem;
+}
+
+.hideScreen .screenMessage h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hideScreen .screenMessage p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.hideScreen .screenMessage p span {
+  font-weight: 700;
+}
+
+.hideScreen button {
+  padding: 1rem;
+  border: none;
+  border-radius: .3rem;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: .04rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.hideScreen button:hover {
+  background: linear-gradient(to right, var(--gradient2), var(--tomato), var(--gradient3), var(--gradient4), var(--gradient1));
+}
+
+footer {
+  text-align: center;
+  font-size: .95rem;
+  color: var(--dark-slate-grey);
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: var(--tomato);
+  font-weight: 700;
+}
+
+@media (min-width: 500px) {
+  .content h1 {
+    text-align: center;
+  }
+  
+  .content h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    background-color: var(--dark-slate-grey);
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  .mainScreen {
+    background-color: var(--white);
+    min-height: 0;
+    width: 43.75rem;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+
+  .image {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+  }
+
+  .image img {
+    width: 100%;
+    height: 29.25rem;
+  }
+
+  .content {
+    width: 50%;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  
+  .content h2 {
+    font-size: .95rem;
+    text-align: left;
+  }
+
+  .content .benefits {
+    gap: .5rem;
+    padding: .5rem 0;
+  }
+
+  .content .benefits .list {
+    gap: .7rem;
+  }
+
+  .content .benefits .list p {
+    font-size: .95rem;
+  }
+
+  .content form {
+    padding-top: .5rem;
+  }
+
+  .content form input {
+    padding: .9rem;
+   }
+
+   .content form button {
+    padding: .9rem;
+    margin-top: .5rem;
+  }
+
+  .hideScreen {
+    display: none;
+    background-color: var(--white);
+    min-height: 0;
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+  }
+
+  .hideScreen .screenMessage {
+    gap: 1rem;
+  }
+
+  .hideScreen .screenMessage img {
+    width: 3rem;
+  }
+
+  .hideScreen .screenMessage h1 {
+    font-size: 2.4rem;
+  }
+  
+  .hideScreen .screenMessage p {
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  .hideScreen button {
+    padding: .9rem;
+  }
+
+  footer {
+    font-size: .95rem;
+    color: var(--white);
+  }
+}
+
+@media (min-width: 1300px) {
+  .mainScreen {
+    width: 50rem;
+    height: 31.25rem;
+    margin: 5rem 2rem;
+    padding: 1rem;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .content {
+    width: 55%;
+    padding: 2rem 1rem 2rem 2rem;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+  
+  .content h2 {
+    font-size: 1.05rem;
+  }
+
+  .content .benefits .list {
+    gap: 1rem;
+  }
+
+  .content .benefits .list p {
+    font-size: 1.05rem;
+  }
+
+  .content form button {
+    margin-top: 1rem;
+  }
+
+  footer {
+    font-size: .9rem;
+    letter-spacing: .05rem;
+  }
+}
